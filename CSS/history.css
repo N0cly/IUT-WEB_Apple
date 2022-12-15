@@ -78,6 +78,7 @@ body{
 	box-sizing: content-box;
 }
 
+
 ul {
 	list-style-type: none;
 }
@@ -95,18 +96,21 @@ main{
 	height: 100vh;
 }
 
-/*Bar Nav*/
+.grid{
+	display: grid;
+	gap: 1.5rem;
+}
+
+.nav__list{
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	padding: 0;
+}
+
 .header{
 	width: 100%;
 	position: sticky;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
-}
-
-.nav{
-	grid-template-columns: repeat(3, 1fr);
-	height: var(--header-height);
-	display: grid;
-	align-items: center;
 }
 
 .nav__logo {
@@ -131,108 +135,20 @@ main{
 	opacity: 1;
 	transition: .3s;
 }
-
-.nav__list{
-	grid-template-columns: repeat(3, 1fr);
-	gap: 2rem;
-	padding: 0;
-}
-
-.grid{
-	display: grid;
-	gap: 1.5rem;
-}
-
-
 .nav__item{
 	justify-self: center;
 	font-weight: var(--font-medium);
 	font-size: var(--h1-font-size);
 }
-/*----------------*/
 
-/*Selection menu cards*/
-.menu{
-
-	position: relative;
-	z-index: 1;
-	display: flex;
-	justify-content: center;
+.nav{
+	grid-template-columns: repeat(3, 1fr);
+	height: var(--header-height);
+	display: grid;
 	align-items: center;
-	flex-wrap: wrap;
-	margin: 40px 0;
 }
 
-
-.card{
-	position: relative;
-	background: linear-gradient(rgba(177, 173, 173, 0.8), rgba(181, 181, 181, 0.8));
-	box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-	width: 300px;
-	height: 150px;
-	margin: 10px;
-	border-radius: 10px;
-	overflow: hidden;
+.history__link{
+	color: rgb(134, 134, 134);
+	text-decoration-line:underline;
 }
-
-.card__img{
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	margin-top: 40px;
-	overflow: hidden;
-}
-
-.card__info{
-	position: absolute;
-	top: 0;
-	text-align: center;
-	padding: 2rem 0;
-	opacity: 0;
-	width: 300px;
-	height: 150px;
-	transition: .3s;
-}
-.card__info:hover {
-	opacity: 1;
-	backdrop-filter: blur(2px);
-	transition: .3s;
-	z-index: 2;
-}
-
-.card__title{
-	font-weight: var(--font-semi-bold);
-	font-size: var(--h1-font-size);
-	transform: translateY(1rem);
-	font-size: 2rem;
-	color: white;
-	background: -webkit-linear-gradient(rgb(122, 118, 118), rgb(24, 24, 24));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;	
-}
-
-.card__subtitle{
-	font-weight: var(--font-regular);
-	transform: translateY(1rem);	
-
-
-}
-
-.history .card__img{
-	width: 300px;
-}
-
-.perso .card__img{
-	margin: 0;
-	transform: translateX(-1.2rem);
-	width: 335px;
-}
-
-.products .card__img{
-	margin: 0 1.6rem;
-	transform: translateY(-.5rem);
-	width: 250px;
-}
-/*-----------------*/
