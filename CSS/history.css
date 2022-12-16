@@ -116,7 +116,7 @@ main{
 .nav__logo {
 	padding-left: 1rem;
 	position: absolute;
-	top: 10px;
+	top: 1px;
 	opacity: 1;
 	transition: .3s;
 }
@@ -124,8 +124,8 @@ main{
 .nav__logo2 {
 	padding-left: 1rem;
 	position: absolute;
-	top: 9px;
-	left: .495px;
+	top: -1.4px;
+	left: -1px;
 	width: 65px;
 	opacity: 0;
 	transition: .3s;

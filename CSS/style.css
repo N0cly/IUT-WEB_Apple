@@ -112,7 +112,6 @@ main{
 .nav__logo {
 	padding-left: 1rem;
 	position: absolute;
-	top: 10px;
 	opacity: 1;
 	transition: .3s;
 }
@@ -120,8 +119,8 @@ main{
 .nav__logo2 {
 	padding-left: 1rem;
 	position: absolute;
-	top: 9px;
-	left: .495px;
+	top: -1.4px;
+	left: -1px;
 	width: 65px;
 	opacity: 0;
 	transition: .3s;
@@ -205,19 +204,23 @@ main{
 .card__title{
 	font-weight: var(--font-semi-bold);
 	font-size: var(--h1-font-size);
-	transform: translateY(1rem);
+	transform: translateY(1.5rem);
 	font-size: 2rem;
-	color: white;
-	background: -webkit-linear-gradient(rgb(122, 118, 118), rgb(24, 24, 24));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;	
+	/*background: -webkit-linear-gradient(rgb(122, 118, 118), rgb(24, 24, 24));*/
+ 	background-clip: text;
+	-webkit-background-clip: text;
+	color: rgb(49, 49, 49);
+	text-shadow: 1px 1px 8px rgb(255, 255, 255);
 }
 
 .card__subtitle{
 	font-weight: var(--font-regular);
-	transform: translateY(1rem);	
-
-
+	transform: translateY(2rem);	
+	/*background: -webkit-linear-gradient(rgb(122, 118, 118), rgb(24, 24, 24));*/
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: rgb(24, 24, 24);
+	text-shadow: 0px -1px 6px rgb(255, 255, 255);
 }
 
 .history .card__img{
